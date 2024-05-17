@@ -20,7 +20,6 @@ body{
 }
 
 .primarylink{
-
     background-color: var(--primary-background);
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
@@ -28,7 +27,9 @@ body{
 }
 
 .textbox{
-    margin-top:50px; 
-    margin-left:450px; 
-    padding: 5rem;
+    width: 80%;
+    height: 10vh;
+    display: block;
+    margin: 3rem;
+    padding: 1rem;
 }
