@@ -1,43 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poetsen+One&display=swap');
+
+
 body{
     font-family: "Montserrat", sans-serif;
+    display: block;
+    color: var(--black);
+    margin: 0px;
 }
 
 :root{
-    --primary-background:#eab308;
+    --primary: #F2C94C;
+    --black: #333333;
+    --width-break: 600px;
 }
 
 
-.head{
-    background-color: var(--primary-background);
-    padding: 3rem;
+nav{
+    background-color: var(--primary);
     text-align: center;
 }
 
-.link{
-    text-decoration: none;
-    padding: 0.5rem 1 rem;
-}
-
-.primarylink{
-    background-color: var(--primary-background);
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    color: white;
-}
-
-.textbox{
-    width: 80%;
-    height: 10vh;
-    display: block;
-    margin: 3rem;
+.nav-div{
+    font-size: 2rem;
     padding: 1rem;
+}
+
+
+main{
+    margin: auto;
+    padding: 1rem;
+    max-width: var(--width-break);
+}
+
+
+
+textarea{
+    min-height: 20vh;
+    width: 100%;
+    display: block;
+    margin-top: 2rem;
+    font-size: large;
+    font-family: inherit;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+button{
+    background-color: var(--primary);
+    margin: 1rem 0rem;
+    padding: 1rem 3rem ;
+    border: none;
+    font-size: large;
 }
 
 #output{
-    border: 1px solid black;
-    height: 10vh;
-    width :80%;
+    border:1px solid var(--black);
+    min-height: 10vh;
+    max-height: 20vh;
+    width: 100%;
+    overflow: scroll;
     padding: 1rem;
-    margin: 1rem;
+    font-size: large;
 }
+
+footer{
+    background-color: var(--primary);
+    bottom: 0%;
+    position: fixed;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+
+}
+
+footer div{
+    font-size: x-large;
+}
+
